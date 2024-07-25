@@ -1,10 +1,11 @@
 package api
+
 import (
 	"fmt"
+	"main/internal/utils"
 	"net/http"
 	"os"
 	"regexp"
-	"main/internal/utils"
 )
 
 func Get_Req(url string, client *http.Client) ([]byte, int) {
@@ -63,6 +64,3 @@ func Get_company_id(client *http.Client, companyName string) (string, error) {
 
 	return companyID, nil
 }
-
-
-
